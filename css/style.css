@@ -313,6 +313,98 @@ h6 {
 }
 
 
+/*--------page__services--------*/
+
+.page__services {
+    position: relative;
+    z-index: 2;
+    margin: -111px 0px 0px 0px;
+}
+
+.services {}
+
+.services__container {}
+
+.services__body {}
+
+@media (min-width: 670px) {
+    .services__body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px -15px;
+    }
+}
+
+.services__column {
+    flex: 0 1 33.333%;
+}
+
+@media (min-width: 670px) {
+    .services__column {
+        padding: 0px 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .services__column {
+        flex: 0 1 50%;
+    }
+    .services__column:not(:last-child) {
+        margin: 0px 0px 30px 0px;
+    }
+    .services__column:last-child {
+        flex-basis: 100%;
+        flex: 1 1 100%;
+    }
+}
+
+.services__item {
+    height: 100%;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    background-color: #fff;
+    padding: 35px 40px;
+}
+
+@media (max-width: 479px) {
+    .services__item {
+        padding: 25px;
+    }
+}
+
+.item-service {}
+
+.item-service_green {
+    background: #0D5C63;
+}
+
+.item-service_green .item-service__title {
+    color: #fff;
+}
+
+.item-service_green .item-service__text {
+    color: #fff;
+}
+
+.item-service>*:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+}
+
+.item-service__icon {}
+
+.item-service__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(32 / 24 * 100%);
+    letter-spacing: 0.1px;
+}
+
+.item-service__text {
+    color: #737373;
+    line-height: calc(20 / 14 * 100%);
+    letter-spacing: 0.2px;
+}
+
+
 /*--------Подвал--------*/
 
 .footer {}
