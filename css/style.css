@@ -1050,6 +1050,68 @@ h6 {
 }
 
 
+/*--------contact--------*/
+
+.contact {
+    background: #FAFAFA;
+    padding: 40px 0px;
+}
+
+.contact__body {}
+
+.contact__content {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 767px) {
+    .contact__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contact__content {
+        margin-right: 20px;
+    }
+}
+
+.contact__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(32 / 24 * 100%);
+    letter-spacing: 0.1px;
+}
+
+.contact__title:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.contact__text {
+    color: #737373;
+    line-height: calc(20 / 14 * 100%);
+    letter-spacing: 0.2px;
+}
+
+.contact__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 58px;
+    padding: 10px 40px;
+    background-color: #FF7B47;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    line-height: calc(28 / 14 * 100%);
+    letter-spacing: 0.2px;
+    transition: background-color 0.3s ease 0s;
+}
+
+.contact__button:hover {
+    background: #aa5330;
+}
+
+
 /*--------Подвал--------*/
 
 .footer {}
